@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUERY SELECTOR ALL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <h1>TITULO</h1>
+
+    <h2 class="subtitulo">PRIMEIRO</h2>
+    <p>texto p1</p>
+    
+    <h2 class="subtitulo">SEGUNDO</h2>
+    <p>texto p2</p>
+
+    <h2 class="subtitulo">TERCEIRO</h2>
+    <p>texto p3</p>
+
+    <h2 class="subtitulo"></h2>QUARTO</h2>
+    <p>texto p4</p>
+
+    <h2 class="subtitulo">QUINTO</h2>
+    <p>texto p5</p>
+    
+    <script>
+        let ps = document.querySelectorAll(".subtitulo")
+        ps[0].innerHTML = "oi"
+        ps[3].innerHTML = "Aqui"
+    </script>
+</body>
+</html>

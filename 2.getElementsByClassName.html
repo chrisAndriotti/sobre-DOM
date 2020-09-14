@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName</title>
+    <script type="text/javaScript">
+        
+        function mudaDiv() {
+            let divs = document.getElementsByClassName('div')
+            divs[0].style.background = 'royalblue'
+            divs[0].innerText = 'MUDEI'
+        }
+    
+    </script>
+    <style>
+        .div{
+            margin: 10px;
+            border: solid;
+            width: 200px;
+            text-align: center;
+        }
+        input{
+            padding: 10px;
+            background-color: royalblue;
+            border: none;
+            border-radius: 15px;
+            position: relative;
+            top: 10px;
+            left: 70px
+        }
+    </style>
+</head>
+<body>
+    <h1>getElementsByClassName</h1>
+    <p>Com esse método posso manipular todos os elementos contendo uma CLASS igual.</p>
+    <div class="div">
+        <p>Aqui é uma div</p>
+    </div>
+    <div class="div">
+        <p>Aqui é outra div</p>
+    </div>
+    <div class="div">
+        <p>Aqui mais uma</p>
+    </div>
+    <input type="button" onclick="mudaDiv()" value="Bate Aqui">
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild</title>
+    <script type="text/javaScript">
+       
+        function mudaUl1() {
+            let lis1 = document.getElementById('ul3').lastChild
+            document.getElementById('ul1').appendChild(lis1)
+        }
+
+        function mudaUl2() {
+            let lis2 = document.getElementById('ul2').lastChild
+            document.getElementById('ul1').appendChild(lis2)
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <ul id="ul1">
+            <li>item 1</li>
+        </ul>
+        <ul id="ul2">
+            <li>item 9</li>
+            <li>item 7</li>
+            <li>item 5</li>
+            <li>item 3</li>
+        </ul>
+        <ul id="ul3">
+            <li>item 10</li>
+            <li>item 8</li>
+            <li>item 6</li>
+            <li>item 4</li>
+            <li>item 2</li>
+        </ul>
+        <input type="button" onclick="mudaUl1()" value="UL 1">
+        <input type="button" onclick="mudaUl2()" value="UL 2">
+      
+        
+            
+            
+    </div>
+</body>
+</html>

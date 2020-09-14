@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM explicação</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javaScript"> 
+    
+
+//getElementById
+    
+    /*
+    function addNumeros(num1, num2) {
+        let n1 = document.getElementById(num1).value
+        let n2 = document.getElementById(num2).value
+        let soma = Number(n1) + Number(n2)
+        document.getElementById("resultado").innerHTML = soma
+    }
+
+    */
+
+// getElementByName
+
+    /*
+    function ok() {
+        let n = document.getElementsByName('numeros')
+        console.log(n[0].value)
+        console.log(n[1].value)
+    }
+    */
+    
+// getElementByTagName
+    
+    /*
+    let uls = document.getElementsByTagName("ul")
+    let lis = document.getElementsByTagName("li")
+    console.log(uls,lis)
+    */
+
+// querySelectorAll
+
+    let ps=document.querySelectorAll("p")
+    console.log(ps[0])
+    ps[0].innerHTML="OI";
+    
+  
+   </script>  
+</head>
+<body>
+<!-- BY ID-->
+    
+    <!--
+    <h1>Soma</h1>
+    <p>Insira os valores a serem somados:</p>
+    <input type="number" id="numero1" placeholder="Digite aqui">
+    <input type="number" id="numero2" placeholder="Digite aqui">
+    <input type="button" value="SOMAR" onclick="addNumeros('numero1','numero2')"></input>
+    <h1 id="resultado"></h1>
+
+    -->
+
+<!--BY NAME-->
+
+    <!--
+    <input type="number" name="numeros" value="10"><br>
+    <input type="number" name="numeros" value="12"><br>
+    <input type="button" value="VER" onclick="ok('numeros')"></input>
+    -->
+
+<!--BY TAGNAME-->
+
+    <!--
+    <ul>
+        <li>primeiro item</li>
+        <li>segundo  item</li>
+        <li>terceiro item</li>
+    </ul>
+
+    <ul>
+        <li>outro primeiro item</li>
+        <li>outro segundo  item</li>
+        <li>outro terceiro item</li>
+    </ul>
+    -->
+
+<!--Query Selector All-->
+
+    <h1> Teste query selector all </h1>
+    
+    <h2 class="titulo">Teste no paragrafo 1</h2>
+    <p>Parágrafo 1 </p>
+
+    <h2 class="titulo">Teste no paragrafo 2</h2>
+    <p>Parágrafo 2</p>
+
+    <h2 class="titulo">Teste no paragrafo 3</h2>
+    <p>Parágrafo 3</p>
+
+    <h2 class="titulo">Teste no paragrafo 4</h2>
+    <p>Parágrafo 4</p>
+    
+    
+
+
+</body>
+</html>

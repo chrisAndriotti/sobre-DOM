@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#div1{
+            background-color: coral;
+            color: black;
+            text-align: center;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            float: left
+        }
+        div#div2{
+            background-color: rgb(22, 24, 117);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            float: left
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div id='div1' class="divs">
+        <h1>Uma DIV</h1>
+    </div>
+
+    <div id='div2' class="divs">
+        <h1 id="h">Outra DIV</h1>
+    </div>
+
+    <script>    
+        let d1 = document.getElementById('div1')
+        let d2 = document.getElementById('div2')
+        let d3 = document.querySelector('#h')
+        
+        let childNd = d3.childNodes
+        console.log("Child Nodes = "+childNd.length) 
+        
+        let frstChild = d3.firstChild
+        console.log("First Child = "+d3.firstChild.length)
+
+        let ndName = d3.nodeName
+        console.log("Node Name = "+ndName)
+
+        let ndValue = d2.nodeValue
+        console.log("Node Value = "+ndValue)
+
+        let ndType = d3.nodeType
+        console.log("Node Type = "+ndType)
+
+        let prntNode = d3.parentNode
+        console.log("Parent Node = "+prntNode)
+
+        let frstElmntChild = d2.firstElementChild
+        console.log('First Element Child = '+frstElmntChild)
+
+        let lstElmntChild = d2.lastElementChild
+        console.log('Last Element Child = '+lstElmntChild)
+
+
+        d1.addEventListener('click', clicar)
+        d1.addEventListener('mouseenter', entrar)
+        d1.addEventListener('mouseout',sair)
+        d1.addEventListener('dblclick', clicar2x)
+       
+        d2.addEventListener('click', clicar2)
+        d2.addEventListener('mouseenter', entrar2)
+        d2.addEventListener('mouseout', sair2)
+        d2.addEventListener('dblclick', clicar2x2)
+
+        function clicar() {
+            d1.style.background = 'black'
+            d1.style.color = 'white'
+            d1.innerHTML ='Clicou'
+        }
+        function entrar() {
+            d1.innerText ='Entrou!'
+        }
+        
+        function sair() {
+            d1.innerText ='Saiu!'
+            d1.style.background = 'coral'
+        }   
+
+        function clicar2x() {
+            d1.style.background ='yellow'
+            d1.style.color = 'black'
+            d1.innerText = 'clique duplo!'
+        }
+
+        function clicar2() {
+            d2.style.background = 'red'
+            d2.style.color = 'white'
+            d2.innerHTML ='Clicou'
+        }
+        function entrar2() {
+            d2.innerText ='Entrou!'
+        }
+        
+        function sair2() {
+            d2.innerText ='Saiu!'
+            d2.style.background = 'rgb(22, 24, 117)'
+        }   
+
+        function clicar2x2() {
+            d2.style.background ='cyan'
+            d2.innerText = 'clique duplo!'
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javaScript"> 
+
+    function botao() {
+        let ps = document.querySelectorAll("p")
+        //console.log(ps[0])
+        ps[0].innerHTML="eaaae";
+    }
+
+    function botao2() {
+        let todaDiv = document.querySelectorAll('.todaDiv')
+        //console.log(todaDiv[0])
+        todaDiv[0].style.backgroundColor = 'cyan'
+        
+        //titulo[0].innerHTML='TITULO DA DIV"'
+        //titulo[0].style.backgroundColor = "red";
+        //titulo[1].innerHTML='Mudei o titulo'
+    }
+        
+    
+   </script>  
+</head>
+<body>
+
+<!--Query Selector All-->
+
+    <h1 id="titulo"> Teste query selector all </h1>
+    
+    <h2 class="subtitulo">Teste no paragrafo 1</h2>
+    <p>Parágrafo 1 </p>
+
+    <h2 class="subtitulo">Teste no paragrafo 2</h2>
+    <p>Parágrafo 2</p>
+
+    <div class="todaDiv">
+
+        <h2 class="titulo">Teste no paragrafo 3</h2>
+        <p>Parágrafo 3</p>
+
+    </div>
+
+    <h2 class="subtitulo">Teste no paragrafo 4</h2>
+    <p>Parágrafo 4</p>
+    
+    <input type="button" value="Bate aqui" onclick="botao()"></input>
+    <input type="button" value="Bate aqui" onclick="botao2()"></input>
+
+</body>
+</html>
